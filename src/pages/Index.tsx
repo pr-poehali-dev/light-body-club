@@ -9,17 +9,19 @@ import {
 } from '@/components/ui/accordion';
 
 const HERO_IMG =
-  'https://cdn.poehali.dev/projects/98427d21-d67e-4f65-a9c8-226636573610/bucket/43cac213-c4a3-4fe5-9ce3-b3f2b8927724.jpeg';
+  'https://cdn.poehali.dev/projects/98427d21-d67e-4f65-a9c8-226636573610/bucket/6663bf61-934e-4737-ab31-49f18125677f.jpeg';
 
 const BranchIcon = () => (
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block">
-    <path d="M12 22V10" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
-    <path d="M12 16C12 16 8 14 7 10" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
-    <path d="M12 13C12 13 16 11 17 7" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
-    <path d="M12 10C12 10 9 8.5 9 5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
-    <ellipse cx="7" cy="9.5" rx="2.5" ry="1.5" transform="rotate(-20 7 9.5)" fill="currentColor" opacity="0.3"/>
-    <ellipse cx="17" cy="6.5" rx="2.5" ry="1.5" transform="rotate(20 17 6.5)" fill="currentColor" opacity="0.3"/>
-    <ellipse cx="9" cy="4.5" rx="2" ry="1.2" transform="rotate(-10 9 4.5)" fill="currentColor" opacity="0.3"/>
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block">
+    <path d="M10 19V8" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
+    <path d="M10 15.5C10 15.5 7 13.5 6.5 10" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
+    <path d="M10 12C10 12 13 10 13.5 6.5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
+    <path d="M10 8.5C10 8.5 7.5 7 7.5 4" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
+    <path d="M6.5 10C5 9.5 3.5 8 3.5 6C5 6 6.5 7 6.5 10Z" fill="currentColor" opacity="0.6"/>
+    <path d="M13.5 6.5C15 6 16.5 4.5 16.5 2.5C15 2.5 13.5 4 13.5 6.5Z" fill="currentColor" opacity="0.6"/>
+    <path d="M7.5 4C6.5 3.5 5 2.5 5 1C6.2 1 7.5 2 7.5 4Z" fill="currentColor" opacity="0.6"/>
+    <path d="M10 12C10 12 12 10.5 14.5 11C13.5 12.5 11.5 13 10 12Z" fill="currentColor" opacity="0.5"/>
+    <path d="M10 15.5C10 15.5 8 14.5 6 15.5C7 17 9 17 10 15.5Z" fill="currentColor" opacity="0.5"/>
   </svg>
 );
 
@@ -173,7 +175,7 @@ const Index = () => {
           </div>
           <div className="relative animate-fade-up [animation-delay:200ms]">
             <div className="leaf-blob overflow-hidden shadow-2xl shadow-primary/20 border border-border/50">
-              <img src={HERO_IMG} alt="Практика" className="w-full h-[480px] object-cover" />
+              <img src={HERO_IMG} alt="Практика" className="w-full h-[480px] object-contain bg-[#f0ede8]" />
             </div>
           </div>
         </div>
@@ -293,11 +295,11 @@ const Index = () => {
       {/* AUTHOR */}
       <section id="author" className="py-20 md:py-28">
         <div className="container max-w-5xl grid md:grid-cols-[300px_1fr] gap-12 items-center">
-          <div className="rounded-[2.5rem] overflow-hidden border border-border/60 shadow-xl shadow-primary/10 bg-muted aspect-[3/4]">
+          <div className="leaf-blob overflow-hidden shadow-xl shadow-primary/15 border border-border/50 aspect-square">
             <img
               src="https://cdn.poehali.dev/projects/98427d21-d67e-4f65-a9c8-226636573610/bucket/bc68721c-6d92-4bf6-84ab-28e1f19151af.png"
               alt="Автор"
-              className="w-full h-full object-cover object-center scale-110"
+              className="w-full h-full object-contain object-center bg-[#1a1a1a]"
             />
           </div>
           <div>
@@ -309,8 +311,7 @@ const Index = () => {
               восстановлении подвижности и энергии.
             </p>
             <p className="font-display text-2xl italic text-primary-readable">
-              Главная задача — не заставить тело работать через силу, а помочь ему вернуть
-              естественную лёгкость.
+              Главная задача — помочь телу вернуть естественную лёгкость.
             </p>
           </div>
         </div>
@@ -374,7 +375,7 @@ const Index = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-20 md:py-32 bg-secondary/20 relative overflow-hidden">
+      <section className="py-20 md:py-32 relative overflow-hidden" style={{background: 'hsl(152 16% 44% / 0.08)'}}>
         <div className="absolute -top-20 -left-20 w-[380px] h-[380px] bg-primary/15 leaf-blob blur-3xl" />
         <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-accent/10 leaf-blob blur-2xl" />
         <div className="container relative max-w-3xl text-center">
