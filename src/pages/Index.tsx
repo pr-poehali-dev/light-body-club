@@ -103,7 +103,7 @@ const Index = () => {
       <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/60">
         <div className="container flex items-center justify-between h-16">
           <a href="#top" className="font-display text-2xl tracking-tight">
-            Лёгкость <span className="text-primary italic">в теле</span>
+            Лёгкость <span className="text-primary-readable italic">в теле</span>
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
             <a href="#about" className="hover:text-foreground transition-colors">О клубе</a>
@@ -137,12 +137,12 @@ const Index = () => {
         <div className="absolute top-40 -left-32 w-[360px] h-[360px] bg-primary/15 leaf-blob blur-3xl" />
         <div className="container relative grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-up">
-            <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-primary mb-6">
+            <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-primary-readable mb-6">
               <Icon name="Leaf" size={14} /> онлайн-клуб для женщин
             </span>
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.02] mb-6">
               Лёгкость в теле начинается{' '}
-              <span className="italic text-primary">не с изнурительных тренировок</span>,
+              <span className="italic text-primary-readable">не с изнурительных тренировок</span>,
               а с заботы о себе
             </h1>
             <p className="text-lg text-muted-foreground max-w-xl mb-8 leading-relaxed">
@@ -187,7 +187,7 @@ const Index = () => {
           </div>
           <div className="mt-12 bg-secondary/30 rounded-3xl p-8 text-center">
             <p className="text-muted-foreground mb-2">Возможно, вы уже пробовали фитнес, марафоны, интенсивы или случайные видео.</p>
-            <p className="font-display text-2xl italic text-primary">
+            <p className="font-display text-2xl italic text-primary-readable">
               Но регулярности не получилось, а тело продолжает подавать сигналы.
             </p>
           </div>
@@ -213,7 +213,7 @@ const Index = () => {
               </div>
             ))}
           </div>
-          <p className="text-center font-display text-2xl md:text-3xl italic mt-14 max-w-2xl mx-auto text-primary">
+          <p className="text-center font-display text-2xl md:text-3xl italic mt-14 max-w-2xl mx-auto text-primary-readable">
             Главный результат — тело снова становится источником энергии, а не усталости.
           </p>
         </div>
@@ -280,18 +280,22 @@ const Index = () => {
       {/* AUTHOR */}
       <section id="author" className="py-20 md:py-28">
         <div className="container max-w-5xl grid md:grid-cols-[300px_1fr] gap-12 items-center">
-          <div className="leaf-blob overflow-hidden border border-border/60 bg-secondary/30 aspect-square flex items-center justify-center">
-            <Icon name="User" size={80} className="text-primary/40" />
+          <div className="leaf-blob overflow-hidden border border-border/60 shadow-lg shadow-primary/10">
+            <img
+              src="https://cdn.poehali.dev/projects/98427d21-d67e-4f65-a9c8-226636573610/bucket/bc68721c-6d92-4bf6-84ab-28e1f19151af.png"
+              alt="Автор"
+              className="w-full h-full object-cover object-top"
+            />
           </div>
           <div>
-            <span className="text-xs uppercase tracking-[0.2em] text-primary">об авторе</span>
+            <span className="text-xs uppercase tracking-[0.2em] text-primary-readable">об авторе</span>
             <h2 className="font-display text-4xl md:text-5xl my-4">Имя автора</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
               Преподаватель йоги и проводник в бережную работу с телом. Подход основан на
               регулярной мягкой практике, внимании к состоянию человека и постепенном
               восстановлении подвижности и энергии.
             </p>
-            <p className="font-display text-2xl italic text-primary">
+            <p className="font-display text-2xl italic text-primary-readable">
               Главная задача — не заставить тело работать через силу, а помочь ему вернуть
               естественную лёгкость.
             </p>
