@@ -4,25 +4,25 @@
 
 @layer base {
   :root {
-    --background: 36 38% 96%;
-    --foreground: 30 12% 22%;
+    --background: 36 30% 96%;
+    --foreground: 220 28% 20%;
 
-    --card: 38 40% 98%;
-    --card-foreground: 30 12% 22%;
+    --card: 38 30% 98%;
+    --card-foreground: 220 28% 20%;
 
-    --popover: 38 40% 98%;
-    --popover-foreground: 30 12% 22%;
+    --popover: 38 30% 98%;
+    --popover-foreground: 220 28% 20%;
 
-    --primary: 100 10% 58%;
-    --primary-foreground: 36 20% 18%;
+    --primary: 88 18% 50%;
+    --primary-foreground: 40 30% 97%;
 
-    --secondary: 26 38% 80%;
-    --secondary-foreground: 24 30% 24%;
+    --secondary: 26 32% 82%;
+    --secondary-foreground: 220 28% 20%;
 
-    --muted: 36 26% 90%;
-    --muted-foreground: 30 10% 46%;
+    --muted: 36 20% 91%;
+    --muted-foreground: 220 10% 48%;
 
-    --accent: 16 48% 56%;
+    --accent: 16 42% 52%;
     --accent-foreground: 40 40% 97%;
 
     --destructive: 0 70% 50%;
@@ -107,15 +107,16 @@
   h3,
   h4,
   .font-display {
-    font-family: "Cormorant", serif;
+    font-family: "Cormorant SC", "Cormorant", serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    font-weight: 500;
   }
 }
 
 @layer utilities {
   .font-display {
-    font-family: "Cormorant", serif;
+    font-family: "Cormorant SC", "Cormorant", serif;
   }
   .bg-grain {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
