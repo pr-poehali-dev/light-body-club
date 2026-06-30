@@ -195,25 +195,25 @@ const Index = () => {
       </section>
 
       {/* RESULTS */}
-      <section className="py-20 md:py-28 bg-primary text-primary-foreground relative overflow-hidden">
-        <div className="absolute -bottom-32 -right-20 w-[400px] h-[400px] bg-accent/20 leaf-blob blur-3xl" />
+      <section className="py-20 md:py-28 bg-secondary/25 relative overflow-hidden">
+        <div className="absolute -bottom-32 -right-20 w-[400px] h-[400px] bg-accent/10 leaf-blob blur-3xl" />
         <div className="container relative max-w-5xl">
           <h2 className="font-display text-4xl md:text-5xl mb-4 text-center">Что изменится</h2>
-          <p className="text-center text-primary-foreground/70 mb-14">
+          <p className="text-center text-muted-foreground mb-14">
             После регулярных занятий вы заметите
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {results.map((r, i) => (
               <div
                 key={i}
-                className="bg-primary-foreground/10 rounded-2xl p-6 backdrop-blur-sm border border-primary-foreground/10"
+                className="bg-card rounded-2xl p-6 border border-border/60"
               >
-                <Icon name={r.icon} size={28} className="mb-3 text-secondary" />
+                <Icon name={r.icon} size={28} className="mb-3 text-accent" />
                 <p className="text-sm leading-relaxed">{r.text}</p>
               </div>
             ))}
           </div>
-          <p className="text-center font-display text-2xl md:text-3xl italic mt-14 max-w-2xl mx-auto">
+          <p className="text-center font-display text-2xl md:text-3xl italic mt-14 max-w-2xl mx-auto text-primary">
             Главный результат — тело снова становится источником энергии, а не усталости.
           </p>
         </div>
