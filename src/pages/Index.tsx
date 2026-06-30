@@ -9,7 +9,19 @@ import {
 } from '@/components/ui/accordion';
 
 const HERO_IMG =
-  'https://cdn.poehali.dev/projects/98427d21-d67e-4f65-a9c8-226636573610/files/216204d4-ee53-4de9-ba7d-eec59bf520bb.jpg';
+  'https://cdn.poehali.dev/projects/98427d21-d67e-4f65-a9c8-226636573610/bucket/43cac213-c4a3-4fe5-9ce3-b3f2b8927724.jpeg';
+
+const BranchIcon = () => (
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block">
+    <path d="M12 22V10" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+    <path d="M12 16C12 16 8 14 7 10" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+    <path d="M12 13C12 13 16 11 17 7" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+    <path d="M12 10C12 10 9 8.5 9 5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+    <ellipse cx="7" cy="9.5" rx="2.5" ry="1.5" transform="rotate(-20 7 9.5)" fill="currentColor" opacity="0.3"/>
+    <ellipse cx="17" cy="6.5" rx="2.5" ry="1.5" transform="rotate(20 17 6.5)" fill="currentColor" opacity="0.3"/>
+    <ellipse cx="9" cy="4.5" rx="2" ry="1.2" transform="rotate(-10 9 4.5)" fill="currentColor" opacity="0.3"/>
+  </svg>
+);
 
 const audience = [
   'к вечеру болит спина или шея',
@@ -137,8 +149,8 @@ const Index = () => {
         <div className="absolute top-40 -left-32 w-[360px] h-[360px] bg-primary/15 leaf-blob blur-3xl" />
         <div className="container relative grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-up">
-            <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-primary-readable mb-6">
-              <Icon name="Leaf" size={14} /> онлайн-клуб для женщин
+            <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-primary-readable mb-6">
+              <BranchIcon /> онлайн-клуб для женщин
             </span>
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.02] mb-6">
               Лёгкость в теле начинается{' '}
@@ -195,8 +207,9 @@ const Index = () => {
       </section>
 
       {/* RESULTS */}
-      <section className="py-20 md:py-28 bg-secondary/25 relative overflow-hidden">
-        <div className="absolute -bottom-32 -right-20 w-[400px] h-[400px] bg-accent/10 leaf-blob blur-3xl" />
+      <section className="py-20 md:py-28 bg-primary/8 relative overflow-hidden" style={{background: 'hsl(152 16% 44% / 0.08)'}}>
+        <div className="absolute -bottom-32 -right-20 w-[400px] h-[400px] bg-primary/10 leaf-blob blur-3xl" />
+        <div className="absolute -top-20 -left-20 w-[300px] h-[300px] bg-primary/8 leaf-blob blur-2xl" />
         <div className="container relative max-w-5xl">
           <h2 className="font-display text-4xl md:text-5xl mb-4 text-center">Что изменится</h2>
           <p className="text-center text-muted-foreground mb-14">
@@ -206,9 +219,9 @@ const Index = () => {
             {results.map((r, i) => (
               <div
                 key={i}
-                className="bg-card rounded-2xl p-6 border border-border/60"
+                className="bg-card rounded-2xl p-6 border border-primary/20 hover:border-primary/50 transition-colors"
               >
-                <Icon name={r.icon} size={28} className="mb-3 text-accent" />
+                <Icon name={r.icon} size={28} className="mb-3 text-primary-readable" />
                 <p className="text-sm leading-relaxed">{r.text}</p>
               </div>
             ))}
@@ -280,11 +293,11 @@ const Index = () => {
       {/* AUTHOR */}
       <section id="author" className="py-20 md:py-28">
         <div className="container max-w-5xl grid md:grid-cols-[300px_1fr] gap-12 items-center">
-          <div className="leaf-blob overflow-hidden border border-border/60 shadow-lg shadow-primary/10">
+          <div className="rounded-[2.5rem] overflow-hidden border border-border/60 shadow-xl shadow-primary/10 bg-muted aspect-[3/4]">
             <img
               src="https://cdn.poehali.dev/projects/98427d21-d67e-4f65-a9c8-226636573610/bucket/bc68721c-6d92-4bf6-84ab-28e1f19151af.png"
               alt="Автор"
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover object-center scale-110"
             />
           </div>
           <div>
