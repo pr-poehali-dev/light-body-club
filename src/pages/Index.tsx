@@ -357,19 +357,23 @@ const Index = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-20 md:py-32 bg-primary text-primary-foreground relative overflow-hidden">
-        <div className="absolute -top-20 -left-20 w-[380px] h-[380px] bg-accent/20 leaf-blob blur-3xl" />
+      <section className="py-20 md:py-32 bg-secondary/20 relative overflow-hidden">
+        <div className="absolute -top-20 -left-20 w-[380px] h-[380px] bg-primary/15 leaf-blob blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-accent/10 leaf-blob blur-2xl" />
         <div className="container relative max-w-3xl text-center">
-          <h2 className="font-display text-4xl md:text-6xl mb-6 leading-tight">
+          <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-primary mb-6">
+            <Icon name="Leaf" size={14} /> клуб «Лёгкость в теле»
+          </span>
+          <h2 className="font-display text-4xl md:text-6xl mb-6 leading-tight text-foreground">
             Возможно, именно сейчас подходящий момент начать
           </h2>
-          <p className="text-primary-foreground/80 text-lg mb-2">
+          <p className="text-muted-foreground text-lg mb-2">
             Не ради идеальной формы. Не ради сложных поз.
           </p>
-          <p className="text-primary-foreground/80 text-lg mb-10">
+          <p className="text-muted-foreground text-lg mb-10">
             А ради того, чтобы снова чувствовать лёгкость, энергию и удовольствие от движения.
           </p>
-          <Button size="lg" variant="secondary" className="rounded-full text-base px-10">
+          <Button size="lg" className="rounded-full text-base px-10">
             Хочу участвовать <Icon name="ArrowRight" size={18} className="ml-1" />
           </Button>
         </div>
