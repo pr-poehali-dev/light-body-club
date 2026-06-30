@@ -152,7 +152,7 @@ const Index = () => {
         <div className="container relative grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-up">
             <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-primary-readable mb-6">
-              <BranchIcon /> онлайн-клуб для женщин
+              <Icon name="Leaf" size={16} /> онлайн-клуб для женщин
             </span>
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.02] mb-6">
               Лёгкость в теле начинается{' '}
@@ -175,7 +175,7 @@ const Index = () => {
           </div>
           <div className="relative animate-fade-up [animation-delay:200ms]">
             <div className="leaf-blob overflow-hidden shadow-2xl shadow-primary/20 border border-border/50">
-              <img src={HERO_IMG} alt="Практика" className="w-full h-[480px] object-contain bg-[#f0ede8]" />
+              <img src={HERO_IMG} alt="Практика" className="w-full h-[480px] object-cover object-[center_30%]" />
             </div>
           </div>
         </div>
