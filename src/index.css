@@ -142,4 +142,7 @@
   .leaf-blob {
     border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
   }
+  .soft-frame {
+    border-radius: 2.5rem 2.5rem 2.5rem 6rem;
+  }
 }
