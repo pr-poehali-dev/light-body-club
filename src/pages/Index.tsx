@@ -295,11 +295,11 @@ const Index = () => {
       {/* AUTHOR */}
       <section id="author" className="py-20 md:py-28">
         <div className="container max-w-5xl grid md:grid-cols-[300px_1fr] gap-12 items-center">
-          <div className="leaf-blob overflow-hidden shadow-xl shadow-primary/15 border border-border/50 aspect-square">
+          <div className="rounded-[3rem] overflow-hidden shadow-xl shadow-primary/15 border border-border/50 aspect-[3/4]">
             <img
               src="https://cdn.poehali.dev/projects/98427d21-d67e-4f65-a9c8-226636573610/bucket/bc68721c-6d92-4bf6-84ab-28e1f19151af.png"
               alt="Автор"
-              className="w-full h-full object-contain object-center bg-[#1a1a1a]"
+              className="w-full h-full object-cover object-top"
             />
           </div>
           <div>
