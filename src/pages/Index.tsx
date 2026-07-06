@@ -174,7 +174,7 @@ const Index = () => {
             </div>
           </div>
           <div className="relative animate-fade-up [animation-delay:200ms]">
-            <div className="leaf-blob overflow-hidden shadow-2xl shadow-primary/20 border border-border/50 aspect-[3/4]">
+            <div className="rounded-[3rem] overflow-hidden shadow-2xl shadow-primary/20 border border-border/50 aspect-[3/4]">
               <img src={HERO_IMG} alt="Практика" className="w-full h-full object-cover object-center" />
             </div>
           </div>
