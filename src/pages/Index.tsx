@@ -126,9 +126,6 @@ const Index = () => {
             <a href="#pricing" className="hover:text-foreground transition-colors">Форматы</a>
           </nav>
           <div className="flex items-center gap-2">
-            <Button variant="ghost" size="sm" className="hidden sm:inline-flex">
-              <Icon name="User" size={16} className="mr-1.5" /> Кабинет
-            </Button>
             <Button size="sm" className="rounded-full">Хочу участвовать</Button>
             <button className="md:hidden ml-1" onClick={() => setMenuOpen(!menuOpen)}>
               <Icon name={menuOpen ? 'X' : 'Menu'} size={22} />
