@@ -143,7 +143,7 @@ const Index = () => {
       </header>
 
       {/* HERO */}
-      <section id="top" className="relative pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden">
+      <section id="top" className="relative pt-28 pb-12 md:pt-36 md:pb-16 overflow-hidden">
         <div className="absolute -top-24 -right-24 w-[420px] h-[420px] bg-secondary/40 leaf-blob blur-2xl" />
         <div className="absolute top-40 -left-32 w-[360px] h-[360px] bg-primary/15 leaf-blob blur-3xl" />
         <div className="container relative grid md:grid-cols-2 gap-12 items-center">
@@ -162,11 +162,13 @@ const Index = () => {
               живые занятия и готовые комплексы даже для плотного графика.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Button size="lg" className="rounded-full text-base px-8">
-                Хочу участвовать <Icon name="ArrowRight" size={18} className="ml-1" />
+              <Button asChild size="lg" className="rounded-full text-base px-8">
+                <a href="#pricing">
+                  Хочу участвовать <Icon name="ArrowRight" size={18} className="ml-1" />
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="rounded-full text-base px-8">
-                Узнать подробнее
+              <Button asChild size="lg" variant="outline" className="rounded-full text-base px-8">
+                <a href="#pricing">Узнать подробнее</a>
               </Button>
             </div>
           </div>
@@ -179,7 +181,7 @@ const Index = () => {
       </section>
 
       {/* AUDIENCE */}
-      <section id="about" className="py-20 md:py-28">
+      <section id="about" className="py-12 md:py-16">
         <div className="container max-w-5xl">
           <h2 className="font-display text-4xl md:text-5xl mb-12 text-center">
             Кому подойдёт клуб
@@ -206,7 +208,7 @@ const Index = () => {
       </section>
 
       {/* RESULTS */}
-      <section className="py-20 md:py-28 bg-primary/8 relative overflow-hidden" style={{background: 'hsl(152 16% 44% / 0.08)'}}>
+      <section className="py-12 md:py-16 bg-primary/8 relative overflow-hidden" style={{background: 'hsl(152 16% 44% / 0.08)'}}>
         <div className="absolute -bottom-32 -right-20 w-[400px] h-[400px] bg-primary/10 leaf-blob blur-3xl" />
         <div className="absolute -top-20 -left-20 w-[300px] h-[300px] bg-primary/8 leaf-blob blur-2xl" />
         <div className="container relative max-w-5xl">
@@ -232,7 +234,7 @@ const Index = () => {
       </section>
 
       {/* INSIDE */}
-      <section id="inside" className="py-20 md:py-28">
+      <section id="inside" className="py-12 md:py-16">
         <div className="container max-w-6xl">
           <h2 className="font-display text-4xl md:text-5xl mb-4 text-center">Что внутри клуба</h2>
           <p className="text-center text-muted-foreground mb-14 max-w-xl mx-auto">
@@ -256,7 +258,7 @@ const Index = () => {
       </section>
 
       {/* WHY STAY + REVIEWS */}
-      <section className="py-20 md:py-28 bg-muted/50">
+      <section className="py-12 md:py-16 bg-muted/50">
         <div className="container max-w-5xl grid md:grid-cols-2 gap-12">
           <div>
             <h2 className="font-display text-4xl mb-6">Почему женщины остаются</h2>
@@ -290,7 +292,7 @@ const Index = () => {
       </section>
 
       {/* AUTHOR */}
-      <section id="author" className="py-20 md:py-28">
+      <section id="author" className="py-12 md:py-16">
         <div className="container max-w-5xl grid md:grid-cols-[300px_1fr] gap-12 items-center">
           <div className="soft-frame overflow-hidden shadow-xl shadow-primary/15 border border-border/50 aspect-[3/4]">
             <img
@@ -315,7 +317,7 @@ const Index = () => {
       </section>
 
       {/* PRICING */}
-      <section id="pricing" className="py-20 md:py-28 bg-muted/50">
+      <section id="pricing" className="py-12 md:py-16 bg-muted/50">
         <div className="container max-w-5xl">
           <h2 className="font-display text-4xl md:text-5xl mb-14 text-center">Форматы участия</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -330,7 +332,9 @@ const Index = () => {
                   </li>
                 ))}
               </ul>
-              <Button variant="outline" size="lg" className="rounded-full w-full">Выбрать</Button>
+              <Button asChild variant="outline" size="lg" className="rounded-full w-full">
+                <a href="/join">Выбрать</a>
+              </Button>
             </div>
             <div className="bg-primary text-primary-foreground rounded-3xl p-8 border border-primary flex flex-col relative overflow-hidden">
               <span className="absolute top-6 right-6 text-xs bg-accent text-accent-foreground rounded-full px-3 py-1">Популярно</span>
@@ -344,14 +348,16 @@ const Index = () => {
                   </li>
                 ))}
               </ul>
-              <Button size="lg" variant="secondary" className="rounded-full w-full">Вступить в клуб</Button>
+              <Button asChild size="lg" variant="secondary" className="rounded-full w-full">
+                <a href="/join">Вступить в клуб</a>
+              </Button>
             </div>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-20 md:py-28">
+      <section className="py-12 md:py-16">
         <div className="container max-w-3xl">
           <h2 className="font-display text-4xl md:text-5xl mb-12 text-center">Вопросы и сомнения</h2>
           <Accordion type="single" collapsible className="space-y-3">
@@ -372,7 +378,7 @@ const Index = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-20 md:py-32 relative overflow-hidden" style={{background: 'hsl(152 16% 44% / 0.08)'}}>
+      <section className="py-12 md:py-20 relative overflow-hidden" style={{background: 'hsl(152 16% 44% / 0.08)'}}>
         <div className="absolute -top-20 -left-20 w-[380px] h-[380px] bg-primary/15 leaf-blob blur-3xl" />
         <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-accent/10 leaf-blob blur-2xl" />
         <div className="container relative max-w-3xl text-center">
@@ -388,8 +394,10 @@ const Index = () => {
           <p className="text-muted-foreground text-lg mb-10">
             А ради того, чтобы снова чувствовать лёгкость, энергию и удовольствие от движения.
           </p>
-          <Button size="lg" className="rounded-full text-base px-10">
-            Хочу участвовать <Icon name="ArrowRight" size={18} className="ml-1" />
+          <Button asChild size="lg" className="rounded-full text-base px-10">
+            <a href="#pricing">
+              Хочу участвовать <Icon name="ArrowRight" size={18} className="ml-1" />
+            </a>
           </Button>
         </div>
       </section>
