@@ -156,8 +156,8 @@ const Index = () => {
               <span className="italic text-primary-readable">не с изнурительных тренировок</span>,
               а с заботы о себе
             </h1>
-            <p className="text-lg text-muted-foreground max-w-xl mb-8 leading-relaxed">
-              Пространство для женщин, где <span className="italic text-primary-readable">забота о себе</span> становится
+            <p className="text-lg text-primary-readable max-w-xl mb-8 leading-relaxed">
+              Пространство для женщин, где забота о себе становится
               естественной частью жизни, а лёгкость, энергия и свобода движений —
               вашим новым состоянием. Мягкие практики, живые занятия и готовые
               комплексы даже для плотного графика.
