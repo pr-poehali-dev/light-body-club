@@ -347,7 +347,7 @@ const Index = () => {
                   </li>
                 ))}
               </ul>
-              <Button size="lg" variant="secondary" className="rounded-full w-full">Записаться в клуб</Button>
+              <Button size="lg" variant="secondary" className="rounded-full w-full">Вступить в клуб</Button>
             </div>
           </div>
         </div>
