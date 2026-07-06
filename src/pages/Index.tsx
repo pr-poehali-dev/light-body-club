@@ -119,11 +119,11 @@ const Index = () => {
           <a href="#top" className="font-display text-2xl tracking-tight">
             Лёгкость <span className="text-primary-readable italic">в теле</span>
           </a>
-          <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
-            <a href="#about" className="hover:text-foreground transition-colors">О клубе</a>
-            <a href="#inside" className="hover:text-foreground transition-colors">Что внутри</a>
-            <a href="#author" className="hover:text-foreground transition-colors">Автор</a>
-            <a href="#pricing" className="hover:text-foreground transition-colors">Форматы</a>
+          <nav className="hidden md:flex items-center gap-8 text-sm text-foreground">
+            <a href="#about" className="hover:text-primary-readable transition-colors">О клубе</a>
+            <a href="#inside" className="hover:text-primary-readable transition-colors">Что внутри</a>
+            <a href="#author" className="hover:text-primary-readable transition-colors">Автор</a>
+            <a href="#pricing" className="hover:text-primary-readable transition-colors">Форматы</a>
           </nav>
           <div className="flex items-center gap-2">
             <Button size="sm" className="rounded-full">Хочу участвовать</Button>
