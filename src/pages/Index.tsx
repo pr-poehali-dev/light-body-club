@@ -297,14 +297,14 @@ const Index = () => {
         <div className="container max-w-5xl grid md:grid-cols-[300px_1fr] gap-12 items-center">
           <div className="soft-frame overflow-hidden shadow-xl shadow-primary/15 border border-border/50 aspect-[3/4]">
             <img
-              src="https://cdn.poehali.dev/projects/98427d21-d67e-4f65-a9c8-226636573610/bucket/bc68721c-6d92-4bf6-84ab-28e1f19151af.png"
-              alt="Автор"
+              src="https://cdn.poehali.dev/projects/98427d21-d67e-4f65-a9c8-226636573610/bucket/47ab04a2-c8c1-4bbc-9b39-8ff3648b5f77.png"
+              alt="Ольга Илькинова"
               className="w-full h-full object-cover object-top"
             />
           </div>
           <div>
             <span className="text-xs uppercase tracking-[0.2em] text-primary-readable">об авторе</span>
-            <h2 className="font-display text-4xl md:text-5xl my-4">Имя автора</h2>
+            <h2 className="font-display text-4xl md:text-5xl my-4">Ольга Илькинова</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
               Преподаватель йоги и проводник в бережную работу с телом. Подход основан на
               регулярной мягкой практике, внимании к состоянию человека и постепенном
