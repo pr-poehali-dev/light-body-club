@@ -386,7 +386,7 @@ const Index = () => {
             <Icon name="Leaf" size={14} /> клуб «Лёгкость в теле»
           </span>
           <h2 className="font-display text-4xl md:text-6xl mb-6 leading-tight text-foreground">
-            Возможно, именно сейчас подходящий момент начать
+            Именно сейчас лучший момент начать
           </h2>
           <p className="text-muted-foreground text-lg mb-2">
             Не ради идеальной формы. Не ради сложных поз.
