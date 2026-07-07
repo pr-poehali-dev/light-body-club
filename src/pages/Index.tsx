@@ -186,7 +186,7 @@ const Index = () => {
           <h2 className="font-display text-4xl md:text-5xl mb-12 text-center">
             Кому подойдёт клуб
           </h2>
-          <p className="text-center text-muted-foreground mb-10">Этот клуб для вас, если:</p>
+          <p className="text-center font-display text-lg md:text-xl text-muted-foreground mb-10">Этот клуб для вас, если:</p>
           <div className="grid sm:grid-cols-2 gap-4">
             {audience.map((item, i) => (
               <div
@@ -213,7 +213,7 @@ const Index = () => {
         <div className="absolute -top-20 -left-20 w-[300px] h-[300px] bg-primary/8 leaf-blob blur-2xl" />
         <div className="container relative max-w-5xl">
           <h2 className="font-display text-4xl md:text-5xl mb-4 text-center">Что изменится</h2>
-          <p className="text-center text-muted-foreground mb-14">
+          <p className="text-center font-display text-lg md:text-xl text-muted-foreground mb-14">
             После регулярных занятий вы заметите
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -237,7 +237,7 @@ const Index = () => {
       <section id="inside" className="py-12 md:py-16">
         <div className="container max-w-6xl">
           <h2 className="font-display text-4xl md:text-5xl mb-4 text-center">Что внутри клуба</h2>
-          <p className="text-center text-muted-foreground mb-14 max-w-xl mx-auto">
+          <p className="text-center font-display text-lg md:text-xl text-muted-foreground mb-14 max-w-xl mx-auto">
             Закрытое онлайн-пространство без жёстких нормативов. Вы занимаетесь в удобном темпе.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -261,10 +261,10 @@ const Index = () => {
       <section className="py-12 md:py-16 bg-muted/50">
         <div className="container max-w-5xl grid md:grid-cols-2 gap-12">
           <div>
-            <h2 className="font-display text-4xl mb-6">Почему женщины остаются</h2>
+            <h2 className="font-display text-4xl mb-6">Почему женщины хотят в клуб</h2>
             <p className="text-muted-foreground mb-6">Потому что здесь не нужно:</p>
             <ul className="space-y-3">
-              {['заставлять себя', 'выдерживать сложные тренировки', 'заниматься через боль', 'сравнивать себя с другими'].map((t, i) => (
+              {['заставлять себя', 'выдерживать сложные тренировки', 'подстраиваться под расписание занятий', 'сравнивать себя с другими'].map((t, i) => (
                 <li key={i} className="flex items-center gap-3">
                   <Icon name="X" size={18} className="text-accent shrink-0" />
                   <span>{t}</span>
