@@ -9,7 +9,7 @@ import {
 } from '@/components/ui/accordion';
 
 const HERO_IMG =
-  'https://cdn.poehali.dev/projects/98427d21-d67e-4f65-a9c8-226636573610/bucket/6663bf61-934e-4737-ab31-49f18125677f.jpeg';
+  'https://cdn.poehali.dev/projects/98427d21-d67e-4f65-a9c8-226636573610/bucket/05bdeb2a-ffec-4b56-8221-cd259e4e5c12.png';
 
 const BranchIcon = () => (
   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block">
@@ -297,7 +297,7 @@ const Index = () => {
         <div className="container max-w-5xl grid md:grid-cols-[300px_1fr] gap-12 items-center">
           <div className="soft-frame overflow-hidden shadow-xl shadow-primary/15 border border-border/50 aspect-[3/4]">
             <img
-              src="https://cdn.poehali.dev/projects/98427d21-d67e-4f65-a9c8-226636573610/bucket/05bdeb2a-ffec-4b56-8221-cd259e4e5c12.png"
+              src="https://cdn.poehali.dev/projects/98427d21-d67e-4f65-a9c8-226636573610/bucket/bc68721c-6d92-4bf6-84ab-28e1f19151af.png"
               alt="Автор"
               className="w-full h-full object-cover object-top"
             />
