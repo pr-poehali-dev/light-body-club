@@ -35,14 +35,14 @@ const audience = [
 ];
 
 const results = [
-  { icon: 'Wind', text: 'уходит напряжение в шее и плечах' },
-  { icon: 'Activity', text: 'спина становится более подвижной' },
-  { icon: 'Sun', text: 'появляется больше энергии' },
-  { icon: 'Moon', text: 'улучшается сон' },
-  { icon: 'Feather', text: 'движения становятся свободнее' },
-  { icon: 'Flower2', text: 'тело становится сильнее и гибче' },
-  { icon: 'StretchHorizontal', text: 'улучшается осанка' },
-  { icon: 'Heart', text: 'появляется ощущение лёгкости и покоя' },
+  { icon: 'Wind', text: 'ушло напряжение в шее и плечах' },
+  { icon: 'Activity', text: 'спина стала более подвижной' },
+  { icon: 'Sun', text: 'появилось больше энергии' },
+  { icon: 'Moon', text: 'улучшился сон' },
+  { icon: 'Feather', text: 'движения стали свободнее' },
+  { icon: 'Flower2', text: 'тело стало сильнее и гибче' },
+  { icon: 'StretchHorizontal', text: 'улучшилась осанка' },
+  { icon: 'Heart', text: 'появилось ощущение лёгкости и покоя' },
 ];
 
 const inside = [
