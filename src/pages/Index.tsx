@@ -399,6 +399,9 @@ const Index = () => {
           <p className="text-muted-foreground text-lg mb-10">
             А ради того, чтобы снова чувствовать лёгкость, энергию и удовольствие от движения.
           </p>
+          <p className="font-display text-xl md:text-2xl italic text-primary-readable mb-6">
+            Нажми кнопку, запишись — сделай шаг навстречу лёгкости в теле
+          </p>
           <Button asChild size="lg" className="rounded-full text-base px-10">
             <a href="#pricing">
               Хочу участвовать <Icon name="ArrowRight" size={18} className="ml-1" />
