@@ -35,14 +35,14 @@ const audience = [
 ];
 
 const results = [
-  { icon: 'Wind', text: 'уйдёт напряжение в шее и плечах' },
-  { icon: 'Activity', text: 'спина станет более подвижной' },
-  { icon: 'Sun', text: 'появится больше энергии' },
-  { icon: 'Moon', text: 'улучшится сон' },
-  { icon: 'Feather', text: 'движения станут свободнее' },
-  { icon: 'Flower2', text: 'тело станет сильнее и гибче' },
-  { icon: 'StretchHorizontal', text: 'улучшится осанка' },
-  { icon: 'Heart', text: 'появится ощущение лёгкости и покоя' },
+  { icon: 'Wind', text: 'уходит напряжение в шее и плечах' },
+  { icon: 'Activity', text: 'спина становится более подвижной' },
+  { icon: 'Sun', text: 'появляется больше энергии' },
+  { icon: 'Moon', text: 'улучшается сон' },
+  { icon: 'Feather', text: 'движения становятся свободнее' },
+  { icon: 'Flower2', text: 'тело становится сильнее и гибче' },
+  { icon: 'StretchHorizontal', text: 'улучшается осанка' },
+  { icon: 'Heart', text: 'появляется ощущение лёгкости и покоя' },
 ];
 
 const inside = [
@@ -218,7 +218,7 @@ const Index = () => {
         <div className="container relative max-w-5xl">
           <h2 className="font-display text-4xl md:text-5xl mb-4 text-center">Что изменится</h2>
           <p className="text-center font-display text-lg md:text-xl text-muted-foreground mb-14">
-            После регулярных занятий вы заметите
+            Что вы заметите после регулярных занятий со мной
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {results.map((r, i) => (
